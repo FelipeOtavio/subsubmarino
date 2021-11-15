@@ -9,7 +9,7 @@ export const Categoria = () => {
     const [produtos,getProdutos] = useState([]);
 
     useEffect(() => {
-        axios.get('http://react.professorburnes.com.br/categoria/'+id)
+        axios.get('https://react.professorburnes.com.br/categoria/'+id)
         .then((response) => {
             getProdutos(response.data);
         })
